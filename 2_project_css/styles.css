@@ -1,0 +1,33 @@
+body{
+    margin-top: 96px;
+    margin-left: 65px;
+    margin-right: 65px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+ul{
+    color: blue;
+    font-size: 25px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.headers{
+    background-color: black;
+    color: white;
+}
+
+.text_block{
+    margin-top: 53px;
+}
