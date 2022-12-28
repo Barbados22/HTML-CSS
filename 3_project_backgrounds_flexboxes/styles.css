@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.stripe{
+    color: white;
+    background-color: #E5E000;
+    justify-content: space-between;
+}
+
+.stripe a{
+    color: white;
+    text-decoration: none;
+}
+
+.stripe li {
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    }
+
+.stripe li::after {
+    content:' / ';
+    }
+
+.stripe li:last-child::after {
+    content:'';
+    }
+
+.thick-stripe{
+    height: 200px;
+}
+.thin-stripe{
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    /*padding-left: 80px;*/
+    padding: 0 80px;
+    align-items: center;
+}
+
+.content{
+    margin: 100px 0;
+}
+
+.content p{
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.background{
+   height: 1080px;
+   background-image: url(images/anime.svg);
+   background-size:cover
+}
