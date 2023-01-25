@@ -16,7 +16,8 @@ list-style: none;
 .content{
     display: flex;
     padding: 52px 70px;
-    justify-content: left;      
+    justify-content: center;
+    gap: 50px;      
 }
 
 .recipe-block{
@@ -28,11 +29,6 @@ list-style: none;
     flex-direction: column;
     justify-content: left;
     align-items:flex-start;
-    margin-right: 50px;
-}
-
-.last-block{
-    margin-right: 0px;
 }
 
 .recipe-block h1{
