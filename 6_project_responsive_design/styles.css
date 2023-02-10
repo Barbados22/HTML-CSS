@@ -22,6 +22,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /*padding: 20px;*/
+    /*gap: 41px;*/
+    padding: 6vw;
+    gap: 11vw;
 }
 
 .block{
@@ -30,30 +34,23 @@ body{
     align-items: center;
     justify-content:center;
     text-align: center;
+    width: 100%;
+    height: 44vw;
+    font-size: 6.7vw;
 }
-
-  /* Макет для мобильных */
-  @media only screen and (max-width: 390px) {
-    .container{
-        padding: 20px;
-        gap: 41px;
-    }
-    .block{
-        width: 100%;
-        height: 6.6em;
-        font-size: 1em;        
-    }    
-  }
 
     /* Макет для десктопа */
     @media only screen and (min-width: 391px) {
         .container{
-            padding: 102px 110px;
-            gap: 20px;
+            /*padding: 102px 110px;
+            gap: 20px;*/
+            padding: 7vw 7.6vw;
+            gap: 1.4vw;
+
         }
         .block{
             width: 45%;
-            height: 6em;
-            font-size: 2em;        
+            height: 20.8vw;
+            font-size: 3.5vw;        
         }    
       }
