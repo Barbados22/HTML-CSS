@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.headers-footers{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: #0000FF;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block{
+    display: flex;
+    border: 5px solid black;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+
+  /* Макет для мобильных */
+  @media only screen and (max-width: 390px) {
+    .container{
+        padding: 20px;
+        gap: 41px;
+    }
+    .block{
+        width: 100%;
+        height: 6.6em;
+        font-size: 1em;        
+    }    
+  }
+
+    /* Макет для десктопа */
+    @media only screen and (min-width: 391px) {
+        .container{
+            padding: 102px 110px;
+            gap: 20px;
+        }
+        .block{
+            width: 45%;
+            height: 6em;
+            font-size: 2em;        
+        }    
+      }
