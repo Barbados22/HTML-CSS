@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #336FD1;
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lock{
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    padding: 1.5rem;
+    background-color: #F8BFC7;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown > span {
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown:hover .features-menu {
+    display: flex;
+    flex-direction: column;
+    background: #F8BFC7;
+    border-radius: 5px;
+    position: absolute;
+    left: -4rem;
+    z-index: 1;
+}
+.features-menu {                    
+    display: none;
+    padding: 1.5rem;
+}
+   
+footer{
+    color: white;
+}
+
+.hero{
+    background-image: url(background.svg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.ground{
+    color: #FEB700;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1.5rem auto 11.1vh;
+    font-size: 2.5rem;
+}
+
+.receiver-form{
+    margin: 4.5rem 4.5rem 9.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    width: fit-content;
+}
+
+.form-row{
+    background-color: #F8BFC7;
+    border: 3px solid #FFFFFF;
+    border-radius: 1rem;
+    width: 50vw;
+    padding: 1.5rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.form-row label{
+    font-weight: bold;
+
+}
+
+.form-row input,select {
+    background-color: #F8BFC7;
+    color: white;
+    font-family: 'Times New Roman';
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid white;
+    appearance: none;
+}
+
+.form-row ::placeholder{
+    color: white;
+}
+
+.receiver-form button{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-color:#FEB700;
+    border: 3px solid white;
+    border-radius: 1.5rem;
+    color: white;
+}
+
+
+@media only screen and (min-width: 600px) {
+    *{
+        font-size: 20px;
+    }
+
+    .receiver-form{
+        margin: 90px 90px 191px;    
+    }
+
+    .form-row{
+        width: 300px;
+        padding: 30px;
+        gap: 16px;
+    }
+}

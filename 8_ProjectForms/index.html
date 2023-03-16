@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Project8. HTML-forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="content">
+
+<div class="lock">
+    
+<header>    
+    <ul>
+        <li><a href="dummy.html" target="_blank">посылки</a></li>
+        <li><a href="dummy.html" target="_blank">упаковка</a></li>
+        <li><a href="dummy.html" target="_blank">подписка</a></li>
+    </ul>
+    <div class="dropdown">
+    <span>меню</span>
+    <ul class="features-menu">
+        <li><a href="dummy.html" target="_blank">посылки</a></li>
+        <li><a href="dummy.html" target="_blank">упаковка</a></li>
+        <li><a href="dummy.html" target="_blank">подписка</a></li>
+      </ul>
+    </div>      
+</header>
+
+<div class="hero">
+    <form
+    action="https://formspree.io/f/xknazaok"
+    method="post"
+    class="receiver-form">
+
+        <div class="form-row">
+            <label for="full-name">Имя</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Ира"/>
+
+            <label for="city">Город</label>
+            <input id="city" name="city" type="text" placeholder="Сочи"/>
+
+            <label for="gift">Подарок</label>
+            <select id="gift" name="gift">
+                <option value="book">Книга в твердом переплете</option>
+                <option value="t-shirt">Футболка с мерчем</option>
+                <option value="lolipop">Леденец</option>
+            </select>
+
+            <label for="email">Электронная почта</label>
+            <input id="email" name="email" type="email"
+            placeholder="daykiller@gmail.com"/>
+        </div>
+
+        <button>отправить</button>
+
+    </form>
+</div>
+
+<p class="ground"> ваша посылка уже в пути!</p>
+
+</div>
+
+<footer>
+<p>секретные поездки для друзей</p>
+<p>© 2023</p>
+</footer>
+
+</div>
+
+</body>
+</html>
