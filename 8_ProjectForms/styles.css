@@ -120,6 +120,11 @@ footer{
     appearance: none;
 }
 
+.form-row input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0 30px #F8BFC7 inset !important;
+}
+
 .form-row ::placeholder{
     color: white;
 }
